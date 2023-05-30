@@ -16,6 +16,7 @@ export default function Home() {
       <div class="bg-gray-900">
       <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div class="relative flex items-center justify-between">
+        <div className='flex items-center'>
           <a
             href="/"
             aria-label="Company"
@@ -27,13 +28,15 @@ export default function Home() {
               Marvin Steinborn
             </span>
           </a>
+          <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer ml-8 dark:fill-primary lg:hidden' />
+          </div>
           <ul class="flex items-center hidden space-x-8 lg:flex">
             <li>
               <a
                 href="/"
                 aria-label="Our product"
                 title="Our product"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-primary"
               >
                 Product
               </a>
@@ -43,7 +46,7 @@ export default function Home() {
                 href="/"
                 aria-label="Our product"
                 title="Our product"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-primary"
               >
                 Features
               </a>
@@ -53,13 +56,13 @@ export default function Home() {
                 href="/"
                 aria-label="Product pricing"
                 title="Product pricing"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-primary"
               >
                 Pricing
               </a>
             </li>
             <li>
-            <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer ml-8 dark:fill-primary' />
+            <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer dark:fill-primary' />
             </li>
             <li>
               <a
@@ -272,7 +275,7 @@ export default function Home() {
                   <div className="text-lg font-semibold">Start</div>
                   <div className="flex items-center justify-center mt-2">
                     <div className="mr-1 text-5xl text-accent font-bold">49€</div>
-                    <div className="text-gray-700">/ mo</div>
+                    <div className="">/ mo</div>
                   </div>
                   <div className="mt-2 space-y-3">
                     <div className="text-gray-700">10 deploys per day</div>
@@ -386,55 +389,55 @@ export default function Home() {
                         <div className="flex flex-col items-center gap-y-5 gap-x-6 [&>*]:w-full sm:flex-row">
                             <div>
                                 <label className="font-medium">
-                                    Vorname
+                                    Vorname*
                                 </label>
                                 <input
                                     type="text"
                                     required
-                                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                                    className="w-full mt-2 px-3 py-2 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                                 />
                             </div>
                             <div>
                                 <label className="font-medium">
-                                    Nachname
+                                    Nachname*
                                 </label>
                                 <input
                                     type="text"
                                     required
-                                    className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                                    className="w-full mt-2 px-3 py-2  bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                                 />
                             </div>
                         </div>
                         <div>
                             <label className="font-medium">
-                                Email
+                                Email*
                             </label>
                             <input
                                 type="email"
                                 required
-                                className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                                className="w-full mt-2 px-3 py-2 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                             />
                         </div>
                         <div>
                             <label className="font-medium">
-                                Telefon
+                                Telefon*
                             </label>
                             <input
                                 type="number"
                                 required
-                                className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                                className="w-full mt-2 px-3 py-2  bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                             />
                         </div>
                         <div>
                             <label className="font-medium">
-                                Message
+                                Nachricht*
                             </label>
                             <textarea required className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"></textarea>
                         </div>
                         <button
                             className="w-full px-4 py-2 text-white font-medium bg-primary hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150"
                         >
-                            Submit
+                            Kontakt aufnehmen
                         </button>
                     </form>
                 </div>
