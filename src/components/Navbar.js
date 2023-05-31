@@ -1,10 +1,13 @@
 import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { useState } from 'react'
+import { useTheme } from "next-themes";
 
 export default function NavBar() {
-    
-  const [darkMode, setDarkMode] = useState(false)
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { systemTheme, theme, setTheme } = useTheme()
+  const currentTheme = theme === 'system' ? systemTheme : theme;
+
     return (
 
         <div className="bg-gray-900">
@@ -21,28 +24,29 @@ export default function NavBar() {
                             <span className="text-xl tracking-wide text-gray-100">
                                 Marvin Steinborn
                             </span>
+                            
                         </a>
-                        <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer ml-8 dark:fill-primary lg:hidden' />
+                        <BsFillMoonStarsFill onClick={() => theme == "dark"? setTheme('light'): setTheme("dark")} className='cursor-pointer ml-8 dark:fill-primary lg:hidden' />
                     </div>
                     <ul className="flex items-center hidden space-x-8 lg:flex">
                         <li>
                             <a
-                                href="/"
+                                href="/datenschutz"
                                 aria-label="Our product"
                                 title="Our product"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-primary"
                             >
-                                Product
+                                Datenschutz
                             </a>
                         </li>
                         <li>
                             <a
-                                href="/"
+                                href="/impressum"
                                 aria-label="Our product"
                                 title="Our product"
                                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-primary"
                             >
-                                Features
+                                Impressum
                             </a>
                         </li>
                         <li>
@@ -56,7 +60,7 @@ export default function NavBar() {
                             </a>
                         </li>
                         <li>
-                            <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer dark:fill-primary' />
+                            <BsFillMoonStarsFill onClick={() => theme == "dark"? setTheme('light'): setTheme("dark")} className='cursor-pointer dark:fill-primary' />
                         </li>
                         <li>
                             <a
