@@ -8,6 +8,9 @@ export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { systemTheme, theme, setTheme } = useTheme()
   const currentTheme = theme === 'system' ? systemTheme : theme;
+  const handleClick = () => {
+    document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+  };
 
     return (
 
@@ -51,21 +54,11 @@ export default function NavBar() {
                             </a>
                         </li>
                         <li>
-                            <a
-                                href="/"
-                                aria-label="Product pricing"
-                                title="Product pricing"
-                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-primary"
-                            >
-                                Pricing
-                            </a>
-                        </li>
-                        <li>
                             <BsFillMoonStarsFill onClick={() => theme == "dark"? setTheme('light'): setTheme("dark")} className='cursor-pointer dark:fill-primary' />
                         </li>
                         <li>
                             <a
-                                href="/"
+                                onClick={handleClick}
                                 className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-primary hover:bg-transparent focus:shadow-outline focus:outline-none"
                                 aria-label="Sign up"
                                 title="Sign up"
@@ -107,23 +100,8 @@ export default function NavBar() {
                                                 title="Company"
                                                 className="inline-flex items-center"
                                             >
-                                                <svg
-                                                    className="w-8 text-deep-purple-accent-400"
-                                                    viewBox="0 0 24 24"
-                                                    strokeLinejoin="round"
-                                                    strokeWidth="2"
-                                                    strokeLinecap="round"
-                                                    strokeMiterlimit="10"
-                                                    stroke="currentColor"
-                                                    fill="none"
-                                                >
-                                                    <rect x="3" y="1" width="7" height="12" />
-                                                    <rect x="3" y="17" width="7" height="6" />
-                                                    <rect x="14" y="1" width="7" height="6" />
-                                                    <rect x="14" y="11" width="7" height="12" />
-                                                </svg>
-                                                <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                                                    Company
+                                                <span className="text-xl font-bold tracking-wide text-gray-800">
+                                                    Marvin Steinborn
                                                 </span>
                                             </a>
                                         </div>
@@ -147,52 +125,32 @@ export default function NavBar() {
                                         <ul className="space-y-4">
                                             <li>
                                                 <a
-                                                    href="/"
+                                                    href="/datenschutz"
                                                     aria-label="Our product"
                                                     title="Our product"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                                                 >
-                                                    Product
+                                                    Dantenschutz
                                                 </a>
                                             </li>
                                             <li>
                                                 <a
-                                                    href="/"
+                                                    href="/impressum"
                                                     aria-label="Our product"
                                                     title="Our product"
                                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                                                 >
-                                                    Features
+                                                    Impressum
                                                 </a>
                                             </li>
                                             <li>
                                                 <a
-                                                    href="/"
-                                                    aria-label="Product pricing"
-                                                    title="Product pricing"
-                                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                                                >
-                                                    Pricing
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="/"
-                                                    aria-label="About us"
-                                                    title="About us"
-                                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                                                >
-                                                    About us
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="/"
+                                                    onClick={handleClick}
                                                     className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-primary hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                                                     aria-label="Sign up"
                                                     title="Sign up"
                                                 >
-                                                    Sign up
+                                                    Kontakt aufnehmen
                                                 </a>
                                             </li>
                                         </ul>

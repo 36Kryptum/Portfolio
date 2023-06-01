@@ -1,7 +1,7 @@
 "use client";
 import emailjs from '@emailjs/browser';
 import { BiCheck } from 'react-icons/bi'
-import { useState, useRef } from 'react'
+import { useRef } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -18,6 +18,10 @@ export default function Home() {
     progress: undefined,
     theme: "colored",
     });
+
+    const handleClick = () => {
+      document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
+    };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -49,8 +53,8 @@ export default function Home() {
               <p className="mt-6 text-lg mb-12"><span className='font-bold text-primary'>Glückwunsch!</span> Du hast soeben deine Lösung gefunden. Ich setze deine Webseite von Anfang bis Ende um.</p>
 
               <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded bg-primary dark:text-background-dark">Kontakt aufnehmen</a>
-                <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">mehr erfahren</a>
+                <a rel="noopener noreferrer" onClick={handleClick} className="px-8 py-3 text-lg font-semibold rounded bg-primary dark:text-background-dark">Kontakt aufnehmen</a>
+                <a rel="noopener noreferrer" onClick={handleClick} className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">mehr erfahren</a>
               </div>
             </div>
             <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
@@ -116,10 +120,10 @@ export default function Home() {
                 </div>
                 <div>
                   <a
-                    href="/"
+                     onClick={handleClick}
                     className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none"
                   >
-                    Start for free
+                    jetzt anfragen
                   </a>
                   <p className="max-w-xs mt-6 text-xs text-gray-600 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
                     Sed ut unde omnis iste natus accusantium doloremque.
@@ -155,7 +159,7 @@ export default function Home() {
                 </div>
                 <div>
                   <a
-                    href="/"
+                    onClick={handleClick}
                     className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-primary hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                   >
                     jetzt anfragen
@@ -180,10 +184,10 @@ export default function Home() {
                 </div>
                 <div>
                   <a
-                    href="/"
+                    onClick={handleClick}
                     className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none"
                   >
-                    Buy Business
+                    jetzt anfragen
                   </a>
                   <p className="max-w-xs mt-6 text-xs text-gray-600 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
                     Sed ut unde omnis iste natus accusantium doloremque.
@@ -200,7 +204,7 @@ export default function Home() {
         {/* Testimonials section */}
 
         {/* Contact section */}
-        <div className="max-w-screen-xl mx-auto p-4  md:px-8">
+        <div className="max-w-screen-xl mx-auto p-4 md:px-8" id={"contact"}>
           <div className="max-w-lg mx-auto space-y-3 sm:text-center">
             <h3 className="text-primary font-semibold">
               Kontakt
