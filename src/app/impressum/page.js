@@ -7,7 +7,7 @@ export default function Test() {
 Marvin Steinborn
 Buchenweg 9
 15374 Müncheberg
-USt-IdNr: ?
+USt-IdNr: DE358228592
 
 Kontakt
 Telefon: +49 176 57642327
