@@ -1,48 +1,63 @@
 "use client";
 import emailjs from '@emailjs/browser';
 import { BiCheck } from 'react-icons/bi'
-import { useState, useRef }  from 'react'
+import { useState, useRef } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-export default function Home() { 
-  const [darkMode, setDarkMode] = useState(false)
+export default function Home() {
   const form = useRef();
+
+  const notify = () => toast.success('Vielen Dank!', {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+    });
 
   const sendEmail = (e) => {
     e.preventDefault();
+    notify()
 
     emailjs.sendForm('service_5uu7b5p', 'template_rgvxzi8', form.current, 'LRqHoYdeSwW-6rK6m')
       .then((result) => {
-          console.log(result.text);
+        console.log(result.text);
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
       });
-    }
+
+      
+    form.current.reset()
+  }
 
   return (
-    <div className={darkMode ? "dark" : ""}>
       <main>
-    
-    {/* Hero section */}
-    <section className="dark:primary dark:text-gray-100">
-	<div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-		<div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-2xl lg:text-left">
-			<h1 className="text-5xl font-bold leading-none sm:text-6xl">Schaffe <br/>
-				<span className="text-primary">digitalen Erfolg </span>für dein Unternehmen
-			</h1>
-			<p className="mt-6 text-lg ">Du hast noch keine Website?</p>
-      <p className="mt-6 text-lg ">Du hast bereits eine Website, aber das Design ist veraltet und deine Fotos sind nicht mehr aktuell?</p>
-      <p className="mt-6 text-lg mb-12"><span className='font-bold text-primary'>Glückwunsch!</span> Du hast soeben deine Lösung gefunden. Ich setze deine Webseite von Anfang bis Ende um.</p>
-			
-      <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-				<a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded bg-primary dark:text-background-dark">Kontakt aufnehmen</a>
-				<a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">mehr erfahren</a>
-			</div>
-		</div>
-		<div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-			<img src="https://mambaui.com/assets/svg/Business_SVG.svg" alt="" className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
-		</div>
-	</div>
-</section>
+
+        {/* Hero section */}
+        <section className="dark:primary dark:text-gray-100">
+          <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+            <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-2xl lg:text-left">
+              <h1 className="text-5xl font-bold leading-none sm:text-6xl">Schaffe <br />
+                <span className="text-primary">digitalen Erfolg </span>für dein Unternehmen
+              </h1>
+              <p className="mt-6 text-lg ">Du hast noch keine Website?</p>
+              <p className="mt-6 text-lg ">Du hast bereits eine Website, aber das Design ist veraltet und deine Fotos sind nicht mehr aktuell?</p>
+              <p className="mt-6 text-lg mb-12"><span className='font-bold text-primary'>Glückwunsch!</span> Du hast soeben deine Lösung gefunden. Ich setze deine Webseite von Anfang bis Ende um.</p>
+
+              <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+                <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded bg-primary dark:text-background-dark">Kontakt aufnehmen</a>
+                <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100">mehr erfahren</a>
+              </div>
+            </div>
+            <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+              <img src="https://mambaui.com/assets/svg/Business_SVG.svg" alt="" className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
+            </div>
+          </div>
+        </section>
 
         {/* Full Service section */}
         <section>
@@ -91,7 +106,7 @@ export default function Home() {
                   <div className="text-lg font-semibold">Start</div>
                   <div className="flex items-center justify-center mt-2">
                     <div className="mr-1 text-5xl text-accent font-bold">49€</div>
-                    <div className="">/ mo</div>
+                    <div className="text-gray-700">/ mo</div>
                   </div>
                   <div className="mt-2 space-y-3">
                     <div className="text-gray-700">10 deploys per day</div>
@@ -125,17 +140,17 @@ export default function Home() {
                   </div>
                   <div className="mt-2 space-y-3">
                     <div className="text-gray-700 flex justify-center">
-                    <BiCheck size={26} className='fill-primary' />
+                      <BiCheck size={26} className='fill-primary' />
                       professionelle Fotos
-                      </div>
-                      <div className="text-gray-700 flex justify-center">
-                    <BiCheck size={26} className='fill-primary' />Webhosting</div>
+                    </div>
                     <div className="text-gray-700 flex justify-center">
-                    <BiCheck size={26} className='fill-primary' />Domain</div>
+                      <BiCheck size={26} className='fill-primary' />Webhosting</div>
                     <div className="text-gray-700 flex justify-center">
-                    <BiCheck size={26} className='fill-primary' />Webdesign</div>
+                      <BiCheck size={26} className='fill-primary' />Domain</div>
                     <div className="text-gray-700 flex justify-center">
-                    <BiCheck size={26} className='fill-primary' />Wartung und Instandhaltung</div>
+                      <BiCheck size={26} className='fill-primary' />Webdesign</div>
+                    <div className="text-gray-700 flex justify-center">
+                      <BiCheck size={26} className='fill-primary' />Wartung und Instandhaltung</div>
                   </div>
                 </div>
                 <div>
@@ -186,84 +201,95 @@ export default function Home() {
 
         {/* Contact section */}
         <div className="max-w-screen-xl mx-auto p-4  md:px-8">
-                <div className="max-w-lg mx-auto space-y-3 sm:text-center">
-                    <h3 className="text-primary font-semibold">
-                        Kontakt
-                    </h3>
-                    <p className="text-primary text-3xl font-semibold sm:text-4xl">
-                        Kontakt aufnehmen
-                    </p>
-                    <p>
-                       Ich freue mich von dir zu hören! Bitte fülle das formular aus.
-                    </p>
+          <div className="max-w-lg mx-auto space-y-3 sm:text-center">
+            <h3 className="text-primary font-semibold">
+              Kontakt
+            </h3>
+            <p className="text-primary text-3xl font-semibold sm:text-4xl">
+              Kontakt aufnehmen
+            </p>
+            <p>
+              Ich freue mich von dir zu hören! Bitte fülle das formular aus.
+            </p>
+          </div>
+          <div className="mt-12 max-w-lg mx-auto">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className="space-y-5"
+            >
+              <div className="flex flex-col items-center gap-y-5 gap-x-6 [&>*]:w-full sm:flex-row">
+                <div>
+                  <label className="font-medium">
+                    Vorname*
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    name="sirname"
+                    className="w-full mt-2 px-3 py-2 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                  />
                 </div>
-                <div className="mt-12 max-w-lg mx-auto">
-                    <form
-                        ref={form}
-                        onSubmit={sendEmail}
-                        className="space-y-5"
-                    >
-                        <div className="flex flex-col items-center gap-y-5 gap-x-6 [&>*]:w-full sm:flex-row">
-                            <div>
-                                <label className="font-medium">
-                                    Vorname*
-                                </label>
-                                <input
-                                    type="text"
-                                    required
-                                    name="sirname"
-                                    className="w-full mt-2 px-3 py-2 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                                />
-                            </div>
-                            <div>
-                                <label className="font-medium">
-                                    Nachname*
-                                </label>
-                                <input
-                                    type="text"
-                                    required
-                                    name="family_name"
-                                    className="w-full mt-2 px-3 py-2  bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                                />
-                            </div>
-                        </div>
-                        <div>
-                            <label className="font-medium">
-                                Email*
-                            </label>
-                            <input
-                                type="email"
-                                required
-                                name="mail"
-                                className="w-full mt-2 px-3 py-2 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                            />
-                        </div>
-                        <div>
-                            <label className="font-medium">
-                                Telefon*
-                            </label>
-                            <input
-                                type="number"
-                                required
-                                name="phone"
-                                className="w-full mt-2 px-3 py-2  bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
-                            />
-                        </div>
-                        <div>
-                            <label className="font-medium">
-                                Nachricht*
-                            </label>
-                            <textarea required name="message" className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"></textarea>
-                        </div>
-                        <button
-                            className="w-full px-4 py-2 text-white font-medium bg-primary hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150"
-                        >
-                            Kontakt aufnehmen
-                        </button>
-                    </form>
+                <div>
+                  <label className="font-medium">
+                    Nachname*
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    name="family_name"
+                    className="w-full mt-2 px-3 py-2  bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                  />
                 </div>
-            </div>
+              </div>
+              <div>
+                <label className="font-medium">
+                  Email*
+                </label>
+                <input
+                  type="email"
+                  required
+                  name="mail"
+                  className="w-full mt-2 px-3 py-2 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                />
+              </div>
+              <div>
+                <label className="font-medium">
+                  Telefon*
+                </label>
+                <input
+                  type="number"
+                  required
+                  name="phone"
+                  className="w-full mt-2 px-3 py-2  bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+                />
+              </div>
+              <div>
+                <label className="font-medium">
+                  Nachricht*
+                </label>
+                <textarea required name="message" className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"></textarea>
+              </div>
+              <button
+                className="w-full px-4 py-2 text-white font-medium bg-primary hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150"
+              >
+                Kontakt aufnehmen
+              </button>
+            </form>
+          </div>
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="colored"
+          />
+        </div>
       </main>
-    </div>
   )
 }
