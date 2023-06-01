@@ -4,7 +4,7 @@ export default function Test() {
 
         <div>
             <h1 className="text-5xl font-bold leading-none sm:text-6xl">Datenschutz</h1>
-
+            <p>Datenschutz</p>
         </div>
     )
 }
