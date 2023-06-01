@@ -107,21 +107,22 @@ export default function Home() {
             <div className="grid max-w-md gap-10 row-gap-5 lg:max-w-screen-lg sm:row-gap-10 lg:grid-cols-3 xl:max-w-screen-lg sm:mx-auto">
               <div className="flex flex-col justify-between p-8 transition-shadow duration-300 bg-white border rounded shadow-sm sm:items-center hover:shadow">
                 <div className="text-center">
-                  <div className="text-lg font-semibold">Start</div>
+                  <div className="text-lg font-semibold text-accent">Basic</div>
                   <div className="flex items-center justify-center mt-2">
                     <div className="mr-1 text-5xl text-accent font-bold">49€</div>
                     <div className="text-gray-700">/ mo</div>
                   </div>
                   <div className="mt-2 space-y-3">
-                    <div className="text-gray-700">10 deploys per day</div>
-                    <div className="text-gray-700">10 GB of storage</div>
-                    <div className="text-gray-700">20 domains</div>
+                  <div className="text-gray-700 flex justify-center">
+                      <BiCheck size={26} className='fill-primary' />Webdesign</div>
+                    <div className="text-gray-700 flex justify-center">
+                      <BiCheck size={26} className='fill-primary' />2h Wartung und Instandhaltung pro Monat</div>
                   </div>
                 </div>
                 <div>
                   <a
                      onClick={handleClick}
-                    className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none"
+                    className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-accent rounded shadow-md hover:bg-transparent hover:border-accent hover:border hover:text-accent focus:shadow-outline focus:outline-none"
                   >
                     jetzt anfragen
                   </a>
@@ -137,30 +138,26 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-lg font-semibold">Pro</div>
+                  <div className="text-lg font-semibold text-primary">Pro</div>
                   <div className="flex items-center justify-center mt-2">
                     <div className="mr-1 text-5xl text-primary font-bold">75€</div>
                     <div className="text-gray-700">/ mo</div>
                   </div>
                   <div className="mt-2 space-y-3">
                     <div className="text-gray-700 flex justify-center">
-                      <BiCheck size={26} className='fill-primary' />
-                      professionelle Fotos
-                    </div>
+                      <BiCheck size={26} className='fill-primary' />Webdesign</div>
                     <div className="text-gray-700 flex justify-center">
                       <BiCheck size={26} className='fill-primary' />Webhosting</div>
                     <div className="text-gray-700 flex justify-center">
                       <BiCheck size={26} className='fill-primary' />Domain</div>
                     <div className="text-gray-700 flex justify-center">
-                      <BiCheck size={26} className='fill-primary' />Webdesign</div>
-                    <div className="text-gray-700 flex justify-center">
-                      <BiCheck size={26} className='fill-primary' />Wartung und Instandhaltung</div>
+                      <BiCheck size={26} className='fill-primary' />5h Wartung pro Monat</div>
                   </div>
                 </div>
                 <div>
                   <a
                     onClick={handleClick}
-                    className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-primary hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                    className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-primary hover:bg-transparent hover:border-primary hover:border hover:text-primary focus:shadow-outline focus:outline-none"
                   >
                     jetzt anfragen
                   </a>
@@ -171,21 +168,28 @@ export default function Home() {
               </div>
               <div className="flex flex-col justify-between p-8 transition-shadow duration-300 bg-white border rounded shadow-sm sm:items-center hover:shadow">
                 <div className="text-center">
-                  <div className="text-lg font-semibold">Business</div>
+                  <div className="text-lg text-accent font-semibold">Premium</div>
                   <div className="flex items-center justify-center mt-2">
                     <div className="mr-1 text-5xl text-accent font-bold">99€</div>
                     <div className="text-gray-700">/ mo</div>
                   </div>
                   <div className="mt-2 space-y-3">
-                    <div className="text-gray-700">500 GB of storage</div>
-                    <div className="text-gray-700">Unlimited domains</div>
-                    <div className="text-gray-700">24/7 Support</div>
+                  <div className="text-gray-700 flex justify-center">
+                      <BiCheck size={26} className='fill-primary' />Webdesign</div>
+                    <div className="text-gray-700 flex justify-center">
+                      <BiCheck size={26} className='fill-primary' />Webhosting</div>
+                    <div className="text-gray-700 flex justify-center">
+                      <BiCheck size={26} className='fill-primary' />Domain</div>
+                    <div className="text-gray-700 flex justify-center">
+                      <BiCheck size={26} className='fill-primary' />10h Wartung pro Monat</div>
+                      <div className="text-gray-700 flex justify-center">
+                      <BiCheck size={26} className='fill-primary' />professionelle Fotos</div>
                   </div>
                 </div>
                 <div>
                   <a
                     onClick={handleClick}
-                    className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-gray-800 rounded shadow-md hover:bg-gray-900 focus:shadow-outline focus:outline-none"
+                    className="inline-flex items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-accent rounded shadow-md hover:bg-transparent hover:border-accent hover:border hover:text-accent focus:shadow-outline focus:outline-none"
                   >
                     jetzt anfragen
                   </a>
