@@ -15,7 +15,7 @@ export default function NavBar() {
     return (
 
         <div className="bg-gray-900">
-            <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+            <div className="px-4 py-5 mx-auto container md:px-24 lg:px-6">
                 <div className="relative flex items-center justify-between">
                     <div className='flex items-center'>
                         <a
@@ -59,7 +59,8 @@ export default function NavBar() {
                         <li>
                             <a
                                 onClick={handleClick}
-                                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-primary hover:bg-transparent focus:shadow-outline focus:outline-none"
+                                className="inline-flex cursor-pointer items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-primary rounded  hover:bg-transparent border-primary border hover:text-primary focus:outline-none"
+                                
                                 aria-label="Sign up"
                                 title="Sign up"
                             >
