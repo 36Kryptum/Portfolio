@@ -18,7 +18,7 @@ export default function Footer() {
                            Buchenweg 9
                         </p>
                         <p className="mt-2 text-sm ">
-                           1537 Müncheberg
+                           15374 Müncheberg
                         </p>
                     </div>
                 </div>
