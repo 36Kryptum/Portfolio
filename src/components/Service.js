@@ -14,12 +14,12 @@ export default function Service() {
             Preise
           </p>
         </div>
-        <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-primary sm:text-4xl md:mx-auto">
+        <h2 className="max-w-lg mb-6 font-sans text-3xl font-semibold leading-none tracking-tight text-primary sm:text-4xl md:mx-auto">
           <span className="relative inline-block">
             <svg
               viewBox="0 0 52 24"
               fill="currentColor"
-              className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+              className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-zinc-400 dark:text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
             >
               <defs>
                 <pattern
@@ -41,7 +41,7 @@ export default function Service() {
             <span className="relative">Das Rundum-Sorglos-Paket</span>
           </span>{' '}
         </h2>
-        <p className="text-base text-white md:text-lg">
+        <p className="text-base dark:text-white md:text-lg">
           Wähle aus drei verschiedenen Paketen mit transparenten Preisen. Somit bezahlst du nur, was du auch wirklich benötigst.
         </p>
       </div>

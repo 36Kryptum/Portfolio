@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="de" suppressHydrationWarning>
-      <body className='bg-white text-background-dark dark:bg-background-dark dark:text-white'>
+      <body className='bg-white text-accent dark:bg-background-dark dark:text-white'>
 
         <Providers>
           <NavBar/>

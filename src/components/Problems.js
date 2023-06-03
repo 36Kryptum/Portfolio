@@ -1,7 +1,7 @@
 export default function Problems() {
     return (
         <div className="max-w-screen-xl mx-auto px-4 text-center">
-   <h2 className="text-center text-white my-2 text-3xl font-bold mb-10">Folgende Probleme kommen dir bekannt vor?</h2>
+   <h2 className="text-center text-primary dark:text-white my-2 text-3xl font-bold mb-10">Folgende Probleme kommen dir bekannt vor?</h2>
    <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
       <div className="border border-zinc-400 dark:border-white rounded p-4 hover:scale-105 duration-300">
          <h3 className="text-center text-primary my-2 text-xl font-bold">Deine Website ist veraltet und das Design ist nicht mehr ansprechend</h3>
