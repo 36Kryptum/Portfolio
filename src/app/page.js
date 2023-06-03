@@ -42,7 +42,7 @@ export default function Home() {
     <main>
 
       {/* Hero section */}
-      <section className="dark:primary dark:text-gray-100">
+      <section className="dark:primary dark:text-gray-100 ">
         <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
           <div className="flex flex-col justify-center text-center rounded-sm lg:max-w-md xl:max-w-2xl lg:text-left">
             <h1 className="text-5xl font-bold leading-none sm:text-6xl">Schaffe <br />
@@ -51,7 +51,7 @@ export default function Home() {
             <p className="mt-6 text-lg ">Du hast noch keine Website?</p>
             <p className="mt-6 text-lg ">Du hast bereits eine Website, aber das Design ist veraltet und deine Fotos sind nicht mehr aktuell?</p>
             <p className="mt-6 text-lg mb-12"><span className='font-bold text-primary'>Glückwunsch!</span> Du hast soeben deine Lösung gefunden. Ich setze deine Webseite von Anfang bis Ende um.</p>
-
+      
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
               <a rel="noopener noreferrer" onClick={handleClick} className="px-8 py-3 text-lg cursor-pointer font-semibold rounded bg-primary dark:text-background-dark">Kontakt aufnehmen</a>
               <a rel="noopener noreferrer" onClick={handleClick} className="px-8 py-3 text-lg font-semibold cursor-pointer border rounded dark:border-gray-100">mehr erfahren</a>
@@ -217,7 +217,7 @@ export default function Home() {
             Kontakt aufnehmen
           </p>
           <p>
-            Ich freue mich von dir zu hören! Bitte fülle das formular aus.
+            Ich freue mich von dir zu hören! Bitte fülle das Formular aus.
           </p>
         </div>
         <div className="mt-12 max-w-md lg:max-w-screen-lg mx-auto">
