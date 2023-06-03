@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
-        <div className="pt-16 mx-auto max-w-md lg:max-w-screen-lg">
-            <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2">
+        <div className="p-4 pt-16 mx-auto max-w-md lg:max-w-screen-lg">
+            <div className="grid gap-10 row-gap-6 mb-8 grid-cols-2">
                 <div className="">
                     <a
                         href="/"
@@ -53,7 +53,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
-                <p className="text-sm ">
+                <p className="text-sm">
                     © Copyright 2023 Marvin Steinborn. Alle Rechte vorbehalten.
                 </p>
                 <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
