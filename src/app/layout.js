@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
           <div className='relative'>
           {children}
           </div>
-          <Footer />
+          <Footer/>
         </Providers>
       </body>
     </html>

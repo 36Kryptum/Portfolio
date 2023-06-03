@@ -8,6 +8,7 @@ export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { systemTheme, theme, setTheme } = useTheme()
   const currentTheme = theme === 'system' ? systemTheme : theme;
+  
   const handleClick = () => {
     document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
   };
