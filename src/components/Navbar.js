@@ -29,7 +29,7 @@ export default function NavBar() {
                             </span>
                             
                         </a>
-                        <BsFillMoonStarsFill onClick={() => theme == "dark"? setTheme('light'): setTheme("dark")} className='cursor-pointer ml-8 dark:fill-primary lg:hidden' />
+                        <BsFillMoonStarsFill onClick={() => theme == "dark"? setTheme('light'): setTheme("dark")} className='cursor-pointer ml-8 dark:fill-primary text-white lg:hidden' />
                     </div>
                     <ul className="flex items-center hidden space-x-8 lg:flex">
                         <li>
@@ -128,7 +128,7 @@ export default function NavBar() {
                                                     href="/datenschutz"
                                                     aria-label="Our product"
                                                     title="Our product"
-                                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primary"
                                                 >
                                                     Dantenschutz
                                                 </a>
@@ -138,7 +138,7 @@ export default function NavBar() {
                                                     href="/impressum"
                                                     aria-label="Our product"
                                                     title="Our product"
-                                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primary"
                                                 >
                                                     Impressum
                                                 </a>
@@ -146,7 +146,7 @@ export default function NavBar() {
                                             <li>
                                                 <a
                                                     onClick={handleClick}
-                                                    className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-primary hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                                                    className="inline-flex items-center cursor-pointer justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-primary rounded  hover:bg-transparent border-primary border hover:text-primary focus:outline-none"
                                                     aria-label="Sign up"
                                                     title="Sign up"
                                                 >

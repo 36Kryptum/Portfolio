@@ -46,7 +46,7 @@ export default function Service() {
         </p>
       </div>
       <div className="grid max-w-md gap-10 row-gap-5 lg:max-w-screen-lg sm:row-gap-10 lg:grid-cols-3 xl:max-w-screen-lg mx-auto">
-        <div className="flex flex-col hover:scale-105 duration-300 justify-between p-8 bg-white border rounded shadow-sm sm:items-center hover:shadow">
+        <div className="flex flex-col hover:scale-105 duration-300 justify-between p-8 bg-white border border-zinc-400 rounded shadow-sm sm:items-center hover:shadow">
           <div className="text-center">
             <div className="text-lg font-semibold text-accent">Basic</div>
             <div className="flex items-center justify-center my-2">
@@ -119,7 +119,7 @@ export default function Service() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-between p-8 hover:scale-105 duration-300 bg-white border rounded shadow-sm sm:items-center hover:shadow">
+        <div className="flex flex-col justify-between p-8 hover:scale-105 duration-300 bg-white border border-zinc-400 rounded shadow-sm sm:items-center hover:shadow">
           <div className="text-center">
             <div className="text-lg text-accent font-semibold">Premium</div>
             <div className="flex items-center justify-center my-2">

@@ -61,7 +61,7 @@ export default function Contact() {
               type="text"
               required
               name="sirname"
-              className="w-full mt-2 px-3 py-2 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+              className="w-full mt-2 px-3 py-2 bg-transparent outline-none border border-zinc-400 focus:border-primary shadow-sm rounded-lg"
             />
           </div>
           <div>
@@ -72,7 +72,7 @@ export default function Contact() {
               type="text"
               required
               name="family_name"
-              className="w-full mt-2 px-3 py-2  bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+              className="w-full mt-2 px-3 py-2  bg-transparent outline-none border border-zinc-400 focus:border-primary shadow-sm rounded-lg"
             />
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function Contact() {
             type="email"
             required
             name="mail"
-            className="w-full mt-2 px-3 py-2 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+            className="w-full mt-2 px-3 py-2 bg-transparent outline-none border border-zinc-400 focus:border-primary shadow-sm rounded-lg"
           />
         </div>
         <div>
@@ -95,14 +95,14 @@ export default function Contact() {
             type="number"
             required
             name="phone"
-            className="w-full mt-2 px-3 py-2  bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
+            className="w-full mt-2 px-3 py-2  bg-transparent outline-none border border-zinc-400 focus:border-primary shadow-sm rounded-lg"
           />
         </div>
         <div>
           <label className="font-medium">
             Nachricht*
           </label>
-          <textarea required name="message" className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"></textarea>
+          <textarea required name="message" className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border border-zinc-400 focus:border-primary shadow-sm rounded-lg"></textarea>
         </div>
         <button
           className="w-full px-4 py-2 text-white font-medium bg-primary hover:bg-transparent border border-primary hover:text-primary active:bg-transparent rounded-lg duration-150"
