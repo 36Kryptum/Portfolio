@@ -1,5 +1,3 @@
-import { BiCheck } from 'react-icons/bi'
-
 export default function Hero() {
     const handleClick = () => {
         document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });

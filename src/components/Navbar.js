@@ -53,7 +53,7 @@ export default function NavBar() {
                             </a>
                         </li>
                         <li>
-                            <BsFillMoonStarsFill onClick={() => theme == "dark"? setTheme('light'): setTheme("dark")} className='cursor-pointer dark:fill-primary' />
+                            <BsFillMoonStarsFill onClick={() => theme == "dark"? setTheme('light'): setTheme("dark")} className='cursor-pointer text-white dark:fill-primary' />
                         </li>
                         <li>
                             <a
