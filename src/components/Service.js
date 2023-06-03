@@ -42,8 +42,7 @@ export default function Service() {
           </span>{' '}
         </h2>
         <p className="text-base text-white md:text-lg">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque rem aperiam, eaque ipsa quae.
+          Wähle aus drei verschiedenen Paketen mit transparenten Preisen. Somit bezahlst du nur, was du auch wirklich benötigst.
         </p>
       </div>
       <div className="grid max-w-md gap-10 row-gap-5 lg:max-w-screen-lg sm:row-gap-10 lg:grid-cols-3 xl:max-w-screen-lg mx-auto">
@@ -70,7 +69,7 @@ export default function Service() {
               jetzt anfragen
             </a>
             <p className="max-w-xs mt-6 text-xs text-gray-600 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
-              Sed ut unde omnis iste natus accusantium doloremque.
+            ein Jahr Mindestvertragslaufzeit
             </p>
           </div>
         </div>
@@ -104,7 +103,7 @@ export default function Service() {
               jetzt anfragen
             </a>
             <p className="max-w-xs mt-6 text-xs text-gray-600 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
-              Sed ut unde omnis iste natus accusantium doloremque.
+            ein Jahr Mindestvertragslaufzeit
             </p>
           </div>
         </div>
@@ -136,7 +135,7 @@ export default function Service() {
               jetzt anfragen
             </a>
             <p className="max-w-xs mt-6 text-xs text-gray-600 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
-              Sed ut unde omnis iste natus accusantium doloremque.
+             ein Jahr Mindestvertragslaufzeit
             </p>
           </div>
         </div>
