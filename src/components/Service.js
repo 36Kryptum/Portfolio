@@ -51,7 +51,7 @@ export default function Service() {
             <div className="text-lg font-semibold text-accent">Basic</div>
             <div className="flex items-center justify-center mt-2">
               <div className="mr-1 text-5xl text-accent font-bold">59€</div>
-              <div className="text-gray-700">/ mo</div>
+              <div className="text-gray-700">/ mtl.</div>
             </div>
             <div className="mt-2 space-y-3">
               <div className="text-gray-700 flex justify-center">
@@ -83,7 +83,7 @@ export default function Service() {
             <div className="text-lg font-semibold text-primary">Pro</div>
             <div className="flex items-center justify-center mt-2">
               <div className="mr-1 text-5xl text-primary font-bold">79€</div>
-              <div className="text-gray-700">/ mo</div>
+              <div className="text-gray-700">/ mtl.</div>
             </div>
             <div className="mt-2 space-y-3">
               <div className="text-gray-700 flex justify-center">
@@ -112,7 +112,7 @@ export default function Service() {
             <div className="text-lg text-accent font-semibold">Premium</div>
             <div className="flex items-center justify-center mt-2">
               <div className="mr-1 text-5xl text-accent font-bold">129€</div>
-              <div className="text-gray-700">/ mo</div>
+              <div className="text-gray-700">/ mtl.</div>
             </div>
             <div className="mt-2 space-y-3">
               <div className="text-gray-700 flex justify-center">
