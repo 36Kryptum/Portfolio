@@ -15,8 +15,10 @@ export default function RootLayout({ children }) {
       <body className='bg-background-light text-white dark:bg-background-dark'>
 
         <Providers>
-          <NavBar />
+          <NavBar/>
+          <div className='relative'>
           {children}
+          </div>
           <Footer />
         </Providers>
       </body>
