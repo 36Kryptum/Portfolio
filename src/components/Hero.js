@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="dark:primary dark:text-gray-100 mb-24">
     <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
       <div className="flex flex-col justify-center text-center rounded-sm lg:max-w-md xl:max-w-2xl lg:text-left">
-        <h1 className="text-5xl font-bold leading-none text-background-dark sm:text-6xl">Schaffe <br/>
+        <h1 className="text-5xl font-bold leading-none text-background-dark dark:text-white sm:text-6xl">Schaffe <br/>
           <span className="text-primary transition duration-300 hover:translate-x-8">digitalen Erfolg </span>für dein Unternehmen
         </h1>
         <p className="my-6 text-xl">hebe dich von deiner Konkurrenz ab, mit einer individuellen Website im Abomodell, ganz ohne Intitialkosten</p>

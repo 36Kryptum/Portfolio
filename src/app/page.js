@@ -5,6 +5,7 @@ import  Hero  from '@/components/Hero';
 import  Information  from '@/components/Problems';
 import  Solution  from '@/components/Solution';
 import  Advantages  from '@/components/Advantages';
+import  Projects  from '@/components/Projects';
 
 export default function Home() {
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Solution/>
       <Advantages/>
       <Service/>
+      <Projects/>
       <Contact/> 
     </main>
   )
