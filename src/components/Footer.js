@@ -30,12 +30,12 @@ export default function Footer() {
                     <div className="flex mt-1">
                         <p className="mr-1 ">Telefon:</p>
                         <a
-                            href="tel:850-123-5021"
+                            href="tel:+4917657642327"
                             aria-label="Our phone"
                             title="Our phone"
                             className="transition-colors duration-300 text-primary"
                         >
-                            +4917657642327
+                            +49 176 57642327
                         </a>
                     </div>
                     <div className="flex mt-1">
