@@ -49,15 +49,19 @@ export default function Service() {
         <div className="flex flex-col hover:scale-105 duration-300 justify-between p-8 bg-white border rounded shadow-sm sm:items-center hover:shadow">
           <div className="text-center">
             <div className="text-lg font-semibold text-accent">Basic</div>
-            <div className="flex items-center justify-center mt-2">
+            <div className="flex items-center justify-center my-2">
               <div className="mr-1 text-5xl text-accent font-bold">59€</div>
               <div className="text-gray-700">/ mtl.</div>
             </div>
             <div className="mt-2 space-y-3">
-              <div className="text-gray-700 flex justify-center">
-                <BiCheck size={26} className='fill-primary' />Webdesign</div>
-              <div className="text-gray-700 flex justify-center">
-                <BiCheck size={26} className='fill-primary' />2h Wartung und Instandhaltung pro Monat</div>
+            <div className="text-gray-700 grid grid-cols-5">
+                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
+                <div className='col-span-4 ml-2'>Webdesign</div>
+                </div>
+                <div className="text-gray-700 grid grid-cols-5">
+                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
+                <div className='col-span-4 ml-2'>2h Wartung mtl.</div>
+                </div>
             </div>
           </div>
           <div>
@@ -81,19 +85,27 @@ export default function Service() {
           </div>
           <div className="text-center">
             <div className="text-lg font-semibold text-primary">Pro</div>
-            <div className="flex items-center justify-center mt-2">
+            <div className="flex items-center justify-center my-2">
               <div className="mr-1 text-5xl text-primary font-bold">79€</div>
               <div className="text-gray-700">/ mtl.</div>
             </div>
             <div className="mt-2 space-y-3">
-              <div className="text-gray-700 flex justify-center">
-                <BiCheck size={26} className='fill-primary' />Webdesign</div>
-              <div className="text-gray-700 flex justify-center">
-                <BiCheck size={26} className='fill-primary' />Webhosting</div>
-              <div className="text-gray-700 flex justify-center">
-                <BiCheck size={26} className='fill-primary' />Domain</div>
-              <div className="text-gray-700 flex justify-center">
-                <BiCheck size={26} className='fill-primary' />5h Wartung pro Monat</div>
+              <div className="text-gray-700 grid grid-cols-5">
+                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
+                <div className='col-span-4 ml-2'>Webdesign</div>
+                </div>
+                <div className="text-gray-700 grid grid-cols-5">
+                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
+                <div className='col-span-4 ml-2'>Webhosting</div>
+                </div>
+                <div className="text-gray-700 grid grid-cols-5">
+                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
+                <div className='col-span-4 ml-2'>Domainkosten</div>
+                </div>
+                <div className="text-gray-700 grid grid-cols-5">
+                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
+                <div className='col-span-4 ml-2'>5h Wartung mtl.</div>
+                </div>
             </div>
           </div>
           <div>
@@ -110,21 +122,31 @@ export default function Service() {
         <div className="flex flex-col justify-between p-8 hover:scale-105 duration-300 bg-white border rounded shadow-sm sm:items-center hover:shadow">
           <div className="text-center">
             <div className="text-lg text-accent font-semibold">Premium</div>
-            <div className="flex items-center justify-center mt-2">
+            <div className="flex items-center justify-center my-2">
               <div className="mr-1 text-5xl text-accent font-bold">129€</div>
               <div className="text-gray-700">/ mtl.</div>
             </div>
             <div className="mt-2 space-y-3">
-              <div className="text-gray-700 flex justify-center">
-                <BiCheck size={26} className='fill-primary' />Webdesign</div>
-              <div className="text-gray-700 flex justify-center">
-                <BiCheck size={26} className='fill-primary' />Webhosting</div>
-              <div className="text-gray-700 flex justify-center">
-                <BiCheck size={26} className='fill-primary' />Domain</div>
-              <div className="text-gray-700 flex justify-center">
-                <BiCheck size={26} className='fill-primary' />10h Wartung pro Monat</div>
-              <div className="text-gray-700 flex justify-center">
-                <BiCheck size={26} className='fill-primary' />professionelle Fotos</div>
+            <div className="text-gray-700 grid grid-cols-5">
+                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
+                <div className='col-span-4 ml-2'>Webdesign</div>
+                </div>
+                <div className="text-gray-700 grid grid-cols-5">
+                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
+                <div className='col-span-4 ml-2'>Webhosting</div>
+                </div>
+                <div className="text-gray-700 grid grid-cols-5">
+                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
+                <div className='col-span-4 ml-2'>Domainkosten</div>
+                </div>
+                <div className="text-gray-700 grid grid-cols-5">
+                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
+                <div className='col-span-4 ml-2'>10h Wartung mtl.</div>
+                </div>
+                <div className="text-gray-700 grid grid-cols-5">
+                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
+                <div className='col-span-4 ml-2'>professionelle Fotos</div>
+                </div>
             </div>
           </div>
           <div>
