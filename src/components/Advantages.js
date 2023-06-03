@@ -3,7 +3,7 @@ export default function Advantages() {
         document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
     };
     return (
-        <div className="max-w-screen-xl mx-auto px-4">
+        <div className="max-w-screen-xl mx-auto px-4 text-center">
             <h2 className="text-center text-white my-2 text-3xl font-bold mb-10">Deine Vorteile</h2>
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
                 <div className="bg-white border-zinc-400 text-accent rounded border dark:border-white p-4 hover:scale-105 duration-300">
