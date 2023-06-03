@@ -47,7 +47,7 @@ export default function Service() {
         </p>
       </div>
       <div className="grid max-w-md gap-10 row-gap-5 lg:max-w-screen-lg sm:row-gap-10 lg:grid-cols-3 xl:max-w-screen-lg mx-auto">
-        <div className="flex flex-col justify-between p-8 transition-shadow duration-300 bg-white border rounded shadow-sm sm:items-center hover:shadow">
+        <div className="flex flex-col hover:scale-105 duration-300 justify-between p-8 bg-white border rounded shadow-sm sm:items-center hover:shadow">
           <div className="text-center">
             <div className="text-lg font-semibold text-accent">Basic</div>
             <div className="flex items-center justify-center mt-2">
@@ -74,7 +74,7 @@ export default function Service() {
             </p>
           </div>
         </div>
-        <div className="relative flex flex-col justify-between p-8 transition-shadow duration-300 bg-white border-2 rounded shadow-sm sm:items-center hover:shadow border-primary">
+        <div className="relative flex flex-col justify-between p-8 hover:scale-105 duration-300 bg-white border-2 rounded shadow-sm sm:items-center hover:shadow border-primary">
           <div className="absolute inset-x-0 top-0 flex justify-center -mt-3">
             <div className="inline-block px-3 py-1 text-xs font-medium tracking-wider text-white uppercase rounded bg-primary">
               Meist Gekauft
@@ -108,7 +108,7 @@ export default function Service() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-between p-8 transition-shadow duration-300 bg-white border rounded shadow-sm sm:items-center hover:shadow">
+        <div className="flex flex-col justify-between p-8 hover:scale-105 duration-300 bg-white border rounded shadow-sm sm:items-center hover:shadow">
           <div className="text-center">
             <div className="text-lg text-accent font-semibold">Premium</div>
             <div className="flex items-center justify-center mt-2">

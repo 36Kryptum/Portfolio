@@ -10,9 +10,9 @@ export default function Hero() {
     <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
       <div className="flex flex-col justify-center text-center rounded-sm lg:max-w-md xl:max-w-2xl lg:text-left">
         <h1 className="text-5xl font-bold leading-none sm:text-6xl">Schaffe <br/>
-          <span className="text-primary transition duration-300">digitalen Erfolg </span>für dein Unternehmen
+          <span className="text-primary transition duration-300 hover:translate-x-8">digitalen Erfolg </span>für dein Unternehmen
         </h1>
-        <p className="my-6 text-xl">mit einer individuellen Website im Abomodell ganz ohne Intitialkosten</p>
+        <p className="my-6 text-xl"><span className='transition ease-in-out hover:text-primary duration-300'>hebe dich von deiner Konkurrenz ab</span>, mit einer individuellen Website im Abomodell, ganz ohne Intitialkosten</p>
   
         <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
           <a rel="noopener noreferrer" onClick={handleClick} className="px-8 py-3 text-lg cursor-pointer font-semibold rounded bg-primary dark:text-background-dark">Kontakt aufnehmen</a>
