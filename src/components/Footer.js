@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <div className="p-4 pt-16 mx-auto max-w-md lg:max-w-screen-lg">
-            <div className="grid gap-10 row-gap-6 mb-8 grid-cols-2">
+            <div className=" gird-cols-1 grid gap-10 row-gap-6 mb-8 sm:grid-cols-2">
                 <div className="">
                     <a
                         href="/"
@@ -22,7 +22,7 @@ export default function Footer() {
                         </p>
                     </div>
                 </div>
-                <div className="space-y-2 text-sm flex flex-col items-end">
+                <div className="space-y-2 text-sm flex flex-col sm:items-end">
                     <div>
                     <p className="text-base font-bold tracking-wide ">
                         Kontakt
