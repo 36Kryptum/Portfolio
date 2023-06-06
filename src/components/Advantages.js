@@ -20,7 +20,7 @@ export default function Advantages() {
                 </div>
                 <div className="bg-white border-zinc-400 text-accent rounded border dark:border-white p-4 hover:scale-105 duration-300">
                     <h3 className="text-center text-primary my-2 text-xl font-bold">Kompetente Betreuung</h3>
-                    Du bist nachhaltig für die Zukunft gerüstet. Wenn Inhalte oder Design geändert werden sollen, setze ich diese schnell und umkompliziert um.
+                    Du bist nachhaltig für die Zukunft gerüstet. Wenn Inhalte oder Design geändert werden sollen, setze ich diese schnell und unkompliziert um.
                 </div>
             </div>
         </div>
