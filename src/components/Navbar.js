@@ -1,12 +1,9 @@
 "use client";
-import { BsFillMoonStarsFill } from 'react-icons/bs'
 import { useState } from 'react'
-import { useTheme } from "next-themes";
 
 export default function NavBar() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { systemTheme, theme, setTheme } = useTheme("dark")
   const handleClick = () => {
     document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
   };
@@ -28,9 +25,7 @@ export default function NavBar() {
                                 Marvin Steinborn
                             </span>
                             
-                        </a>
-                        <BsFillMoonStarsFill onClick={() => theme == "dark"? setTheme('light'): setTheme("dark")} className='cursor-pointer ml-8 dark:fill-primary text-white lg:hidden' />
-                    </div>
+                        </a> </div>
                     <ul className="flex items-center hidden space-x-8 lg:flex">
                         <li>
                             <a
@@ -51,9 +46,6 @@ export default function NavBar() {
                             >
                                 Impressum
                             </a>
-                        </li>
-                        <li>
-                            <BsFillMoonStarsFill onClick={() => theme == "dark"? setTheme('light'): setTheme("dark")} className='cursor-pointer text-white dark:fill-primary' />
                         </li>
                         <li>
                             <a
