@@ -12,14 +12,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="de" suppressHydrationWarning>
-      <body className='bg-background-light text-white dark:bg-background-dark'>
+      <body className='bg-white text-accent dark:bg-background-dark dark:text-white'>
 
         <Providers>
           <NavBar/>
           <div className='relative'>
           {children}
           </div>
-          <Footer />
+          <Footer/>
         </Providers>
       </body>
     </html>
