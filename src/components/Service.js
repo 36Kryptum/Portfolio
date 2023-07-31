@@ -104,7 +104,7 @@ export default function Service() {
                 </div>
                 <div className="text-gray-700 grid grid-cols-5">
                 <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
-                <div className='col-span-4 ml-2'>5h Wartung mtl.</div>
+                <div className='col-span-4 ml-2'>3h Wartung mtl.</div>
                 </div>
             </div>
           </div>
@@ -141,7 +141,7 @@ export default function Service() {
                 </div>
                 <div className="text-gray-700 grid grid-cols-5">
                 <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
-                <div className='col-span-4 ml-2'>10h Wartung mtl.</div>
+                <div className='col-span-4 ml-2'>5h Wartung mtl.</div>
                 </div>
                 <div className="text-gray-700 grid grid-cols-5">
                 <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
