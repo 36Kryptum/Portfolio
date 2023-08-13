@@ -48,10 +48,8 @@ export default function Service() {
       <div className="grid max-w-md gap-10 row-gap-5 lg:max-w-screen-lg sm:row-gap-10 lg:grid-cols-3 xl:max-w-screen-lg mx-auto">
         <div className="flex flex-col hover:scale-105 duration-300 justify-between p-8 bg-white border border-zinc-400 rounded shadow-sm sm:items-center hover:shadow">
           <div className="text-center">
-            <div className="text-lg font-semibold text-accent">Basic</div>
+            <div className="text-4xl font-semibold text-accent">Basic</div>
             <div className="flex items-center justify-center my-2">
-              <div className="mr-1 text-5xl text-accent font-bold">59€</div>
-              <div className="text-gray-700">/ mtl.</div>
             </div>
             <div className="mt-2 space-y-3">
             <div className="text-gray-700 grid grid-cols-5">
@@ -73,7 +71,7 @@ export default function Service() {
               jetzt anfragen
             </a>
             <p className="max-w-xs mt-6 text-xs text-gray-600 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
-            ein Jahr Mindestvertragslaufzeit
+            zwei Jahre Mindestvertragslaufzeit
             </p>
           </div>
         </div>
@@ -84,10 +82,8 @@ export default function Service() {
             </div>
           </div>
           <div className="text-center">
-            <div className="text-lg font-semibold text-primary">Pro</div>
+            <div className="text-4xl font-semibold text-primary">Pro</div>
             <div className="flex items-center justify-center my-2">
-              <div className="mr-1 text-5xl text-primary font-bold">79€</div>
-              <div className="text-gray-700">/ mtl.</div>
             </div>
             <div className="mt-2 space-y-3">
               <div className="text-gray-700 grid grid-cols-5">
@@ -115,16 +111,14 @@ export default function Service() {
               jetzt anfragen
             </a>
             <p className="max-w-xs mt-6 text-xs text-gray-600 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
-            ein Jahr Mindestvertragslaufzeit
+            zwei Jahre Mindestvertragslaufzeit
             </p>
           </div>
         </div>
         <div className="flex flex-col justify-between p-8 hover:scale-105 duration-300 bg-white border border-zinc-400 rounded shadow-sm sm:items-center hover:shadow">
           <div className="text-center">
-            <div className="text-lg text-accent font-semibold">Premium</div>
+            <div className="text-4xl text-accent font-semibold">Premium</div>
             <div className="flex items-center justify-center my-2">
-              <div className="mr-1 text-5xl text-accent font-bold">129€</div>
-              <div className="text-gray-700">/ mtl.</div>
             </div>
             <div className="mt-2 space-y-3">
             <div className="text-gray-700 grid grid-cols-5">
@@ -157,7 +151,7 @@ export default function Service() {
               jetzt anfragen
             </a>
             <p className="max-w-xs mt-6 text-xs text-gray-600 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
-             ein Jahr Mindestvertragslaufzeit
+             zweo Jahre Mindestvertragslaufzeit
             </p>
           </div>
         </div>
