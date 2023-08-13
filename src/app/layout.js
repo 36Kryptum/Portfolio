@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="de" suppressHydrationWarning>
-      <body className='bg-white text-cool-grey-500 dark:bg-background-dark dark:text-white'>
+      <body className='bg-cool-grey-050 text-cool-grey-500 dark:bg-background-dark dark:text-white'>
           <NavBar/>
           <div className='relative'>
           {children}
