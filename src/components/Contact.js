@@ -52,7 +52,7 @@ export default function Contact() {
         onSubmit={sendEmail}
         className="space-y-5"
       >
-        <div className="flex flex-col items-center gap-y-5 gap-x-6 [&>*]:w-full sm:flex-row">
+        <div className="flex flex-col items-center gap-y-5 gap-x-6 [&>*]:w-full">
           <div>
             <label className="font-medium">
               Vorname*

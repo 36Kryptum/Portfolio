@@ -52,11 +52,11 @@ export default function Service() {
             <div className="mt-6 space-y-3">
             <div className="text-gray-700 grid grid-cols-5">
                 <div> <BiCheck size={26} className='fill-primary' /></div>
-                <div className='col-span-4 ml-2'>Webdesign</div>
+                <div className='col-span-4'>Webdesign</div>
                 </div>
                 <div className="text-gray-700 grid grid-cols-5">
                 <div> <BiCheck size={26} className='fill-primary' /></div>
-                <div className='col-span-4 ml-2'>2h Wartung mtl.</div>
+                <div className='col-span-4'>2h Wartung mtl.</div>
                 </div>
             </div>
             </div>
@@ -84,19 +84,19 @@ export default function Service() {
             <div className="mt-6 space-y-3 mx-auto">
               <div className="text-gray-700 grid grid-cols-5">
                 <div> <BiCheck size={26} className='fill-primary' /></div>
-                <div className='col-span-4 ml-2'>Webdesign</div>
+                <div className='col-span-4'>Webdesign</div>
                 </div>
                 <div className="text-gray-700 grid grid-cols-5">
                 <div> <BiCheck size={26} className='fill-primary' /></div>
-                <div className='col-span-4 ml-2'>Webhosting</div>
+                <div className='col-span-4'>Webhosting</div>
                 </div>
                 <div className="text-gray-700 grid grid-cols-5">
                 <div> <BiCheck size={26} className='fill-primary' /></div>
-                <div className='col-span-4 ml-2'>Domainkosten</div>
+                <div className='col-span-4'>Domainkosten</div>
                 </div>
                 <div className="text-gray-700 grid grid-cols-5">
                 <div> <BiCheck size={26} className='fill-primary' /></div>
-                <div className='col-span-4 ml-2'>3h Wartung mtl.</div>
+                <div className='col-span-4'>3h Wartung mtl.</div>
                 </div>
             </div>
             </div>
@@ -111,31 +111,31 @@ export default function Service() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-between p-8 hover:scale-105 duration-300 bg-white border border-zinc-400 rounded shadow-sm sm:items-center hover:shadow">
+        <div className="flex flex-col justify-between p-8 hover:scale-105 duration-300 bg-white border border-zinc-400 rounded shadow-sm hover:shadow">
           <div>
             <div className="text-4xl text-accent font-semibold">Premium</div>
-            <div className="flex items-center justify-center my-2">
+            <div className="flex justify-center my-2">
             </div>
             <div className="mt-2 space-y-3">
             <div className="text-gray-700 grid grid-cols-5">
-                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
-                <div className='col-span-4 ml-2'>Webdesign</div>
+                <div> <BiCheck size={26} className='fill-primary'/></div>
+                <div className='col-span-4'>Webdesign</div>
                 </div>
                 <div className="text-gray-700 grid grid-cols-5">
-                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
-                <div className='col-span-4 ml-2'>Webhosting</div>
+                <div> <BiCheck size={26} className='fill-primary'/></div>
+                <div className='col-span-4'>Webhosting</div>
                 </div>
                 <div className="text-gray-700 grid grid-cols-5">
-                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
-                <div className='col-span-4 ml-2'>Domainkosten</div>
+                <div> <BiCheck size={26} className='fill-primary'/></div>
+                <div className='col-span-4'>Domainkosten</div>
                 </div>
                 <div className="text-gray-700 grid grid-cols-5">
-                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
-                <div className='col-span-4 ml-2'>5h Wartung mtl.</div>
+                <div> <BiCheck size={26} className='fill-primary'/></div>
+                <div className='col-span-4'>5h Wartung mtl.</div>
                 </div>
                 <div className="text-gray-700 grid grid-cols-5">
-                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
-                <div className='col-span-4 ml-2'>professionelle Fotos</div>
+                <div> <BiCheck size={26} className='fill-primary'/></div>
+                <div className='col-span-4'>professionelle Fotos</div>
                 </div>
             </div>
           <div>
