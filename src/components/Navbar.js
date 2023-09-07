@@ -3,10 +3,10 @@ import { useState } from 'react'
 
 export default function NavBar() {
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const handleClick = () => {
-    document.getElementById('contact').scrollIntoView({behavior: 'smooth'});
-  };
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const handleClick = () => {
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    };
 
     return (
 
@@ -24,34 +24,14 @@ export default function NavBar() {
                             <span className="text-xl tracking-wide text-gray-100">
                                 Marvin Steinborn
                             </span>
-                            
+
                         </a> </div>
                     <ul className="flex items-center hidden space-x-8 lg:flex">
                         <li>
                             <a
-                                href="/datenschutz"
-                                aria-label="Our product"
-                                title="Our product"
-                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-primary"
-                            >
-                                Datenschutz
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="/impressum"
-                                aria-label="Our product"
-                                title="Our product"
-                                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-primary"
-                            >
-                                Impressum
-                            </a>
-                        </li>
-                        <li>
-                            <a
                                 onClick={handleClick}
                                 className="inline-flex cursor-pointer items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-primary rounded  hover:bg-transparent border-primary border hover:text-primary focus:outline-none"
-                                
+
                                 aria-label="Sign up"
                                 title="Sign up"
                             >
@@ -86,18 +66,6 @@ export default function NavBar() {
                                 <div className="p-5 bg-white border rounded shadow-sm">
                                     <div className="flex items-center justify-between mb-4">
                                         <div>
-                                            <a
-                                                href="/"
-                                                aria-label="Company"
-                                                title="Company"
-                                                className="inline-flex items-center"
-                                            >
-                                                <span className="text-xl font-bold tracking-wide text-gray-800">
-                                                    Marvin Steinborn
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div>
                                             <button
                                                 aria-label="Close Menu"
                                                 title="Close Menu"
@@ -115,26 +83,6 @@ export default function NavBar() {
                                     </div>
                                     <nav>
                                         <ul className="space-y-4">
-                                            <li>
-                                                <a
-                                                    href="/datenschutz"
-                                                    aria-label="Our product"
-                                                    title="Our product"
-                                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primary"
-                                                >
-                                                    Dantenschutz
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a
-                                                    href="/impressum"
-                                                    aria-label="Our product"
-                                                    title="Our product"
-                                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-primary"
-                                                >
-                                                    Impressum
-                                                </a>
-                                            </li>
                                             <li>
                                                 <a
                                                     onClick={handleClick}

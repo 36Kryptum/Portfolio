@@ -46,22 +46,20 @@ export default function Service() {
         </p>
       </div>
       <div className="grid max-w-md gap-10 row-gap-5 lg:max-w-screen-lg sm:row-gap-10 lg:grid-cols-3 xl:max-w-screen-lg mx-auto">
-        <div className="flex flex-col hover:scale-105 duration-300 justify-between p-8 bg-white border border-zinc-400 rounded shadow-sm sm:items-center hover:shadow">
-          <div className="text-center">
+        <div className="flex flex-col hover:scale-105 duration-300 justify-between p-8 bg-white border border-zinc-400 rounded shadow-sm hover:shadow">
+            <div>
             <div className="text-4xl font-semibold text-accent">Basic</div>
-            <div className="flex items-center justify-center my-2">
-            </div>
-            <div className="mt-2 space-y-3">
+            <div className="mt-6 space-y-3">
             <div className="text-gray-700 grid grid-cols-5">
-                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
+                <div> <BiCheck size={26} className='fill-primary' /></div>
                 <div className='col-span-4 ml-2'>Webdesign</div>
                 </div>
                 <div className="text-gray-700 grid grid-cols-5">
-                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
+                <div> <BiCheck size={26} className='fill-primary' /></div>
                 <div className='col-span-4 ml-2'>2h Wartung mtl.</div>
                 </div>
             </div>
-          </div>
+            </div>
           <div>
 
             <a
@@ -75,48 +73,46 @@ export default function Service() {
             </p>
           </div>
         </div>
-        <div className="relative flex flex-col justify-between p-8 hover:scale-105 duration-300 bg-white border-2 rounded shadow-sm sm:items-center hover:shadow border-primary">
+        <div className="relative flex flex-col justify-between p-8 hover:scale-105 duration-300 bg-white border-2 rounded shadow-sm hover:shadow border-primary">
+          <div>
           <div className="absolute inset-x-0 top-0 flex justify-center -mt-3">
             <div className="inline-block px-3 py-1 text-xs font-medium tracking-wider text-white uppercase rounded bg-primary">
               Meist Gekauft
             </div>
           </div>
-          <div className="text-center">
-            <div className="text-4xl font-semibold text-primary">Pro</div>
-            <div className="flex items-center justify-center my-2">
-            </div>
-            <div className="mt-2 space-y-3">
+            <div className="text-4xl mx-auto font-semibold text-primary">Pro</div>
+            <div className="mt-6 space-y-3 mx-auto">
               <div className="text-gray-700 grid grid-cols-5">
-                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
+                <div> <BiCheck size={26} className='fill-primary' /></div>
                 <div className='col-span-4 ml-2'>Webdesign</div>
                 </div>
                 <div className="text-gray-700 grid grid-cols-5">
-                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
+                <div> <BiCheck size={26} className='fill-primary' /></div>
                 <div className='col-span-4 ml-2'>Webhosting</div>
                 </div>
                 <div className="text-gray-700 grid grid-cols-5">
-                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
+                <div> <BiCheck size={26} className='fill-primary' /></div>
                 <div className='col-span-4 ml-2'>Domainkosten</div>
                 </div>
                 <div className="text-gray-700 grid grid-cols-5">
-                <div> <BiCheck size={26} className='fill-primary mx-auto' /></div>
+                <div> <BiCheck size={26} className='fill-primary' /></div>
                 <div className='col-span-4 ml-2'>3h Wartung mtl.</div>
                 </div>
             </div>
-          </div>
+            </div>
           <div>
             <a
               onClick={handleClick}
               className="inline-flex cursor-pointer items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-primary hover:bg-transparent hover:border-primary hover:border hover:text-primary focus:shadow-outline focus:outline-none">
               jetzt anfragen
             </a>
-            <p className="max-w-xs mt-6 text-xs text-gray-600 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
+            <p className="max-w-xs mt-6 text-xs mx-auto text-gray-600 sm:text-sm text-center sm:max-w-sm sm:mx-auto">
             zwei Jahre Mindestvertragslaufzeit
             </p>
           </div>
         </div>
         <div className="flex flex-col justify-between p-8 hover:scale-105 duration-300 bg-white border border-zinc-400 rounded shadow-sm sm:items-center hover:shadow">
-          <div className="text-center">
+          <div>
             <div className="text-4xl text-accent font-semibold">Premium</div>
             <div className="flex items-center justify-center my-2">
             </div>
@@ -142,7 +138,6 @@ export default function Service() {
                 <div className='col-span-4 ml-2'>professionelle Fotos</div>
                 </div>
             </div>
-          </div>
           <div>
             <a
               onClick={handleClick}
@@ -151,10 +146,11 @@ export default function Service() {
               jetzt anfragen
             </a>
             <p className="max-w-xs mt-6 text-xs text-gray-600 sm:text-sm sm:text-center sm:max-w-sm sm:mx-auto">
-             zweo Jahre Mindestvertragslaufzeit
+             zwei Jahre Mindestvertragslaufzeit
             </p>
           </div>
         </div>
+      </div>
       </div>
     </div>
   </section>
