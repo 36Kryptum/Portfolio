@@ -1,9 +1,6 @@
 import { BiCheck } from 'react-icons/bi'
 
 export default function Service() {
-    const handleClick = () => {
-        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-      };
 
   return (
     <section>
@@ -56,14 +53,14 @@ export default function Service() {
                 </div>
                 <div className="text-gray-700 grid grid-cols-5">
                 <div> <BiCheck size={26} className='fill-primary' /></div>
-                <div className='col-span-4'>2h Wartung mtl.</div>
+                <div className='col-span-4'>1h Wartung mtl.</div>
                 </div>
             </div>
             </div>
           <div>
 
             <a
-              onClick={handleClick}
+              href="#contact"
               className="inline-flex cursor-pointer items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-accent rounded shadow-md hover:bg-transparent hover:border-accent hover:border hover:text-accent focus:shadow-outline focus:outline-none"
             >
               jetzt anfragen
@@ -102,11 +99,11 @@ export default function Service() {
             </div>
           <div>
             <a
-              onClick={handleClick}
+              href="#contact"
               className="inline-flex cursor-pointer items-center justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-primary hover:bg-transparent hover:border-primary hover:border hover:text-primary focus:shadow-outline focus:outline-none">
               jetzt anfragen
             </a>
-            <p className="max-w-xs mt-6 text-xs mx-auto text-gray-600 sm:text-sm text-center sm:max-w-sm sm:mx-auto">
+            <p className="max-w-xs mt-6 text-xs text-gray-600 sm:text-sm sm:max-w-sm sm:mx-auto">
             zwei Jahre Mindestvertragslaufzeit
             </p>
           </div>
@@ -140,7 +137,7 @@ export default function Service() {
             </div>
           <div>
             <a
-              onClick={handleClick}
+              href="#contact"
               className="inline-flex items-center cursor-pointer justify-center w-full h-12 px-6 mt-6 font-medium tracking-wide text-white transition duration-200 bg-accent rounded shadow-md hover:bg-transparent hover:border-accent hover:border hover:text-accent focus:shadow-outline focus:outline-none"
             >
               jetzt anfragen

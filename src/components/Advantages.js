@@ -1,7 +1,4 @@
 export default function Advantages() {
-    const handleClick = () => {
-        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-    };
     return (
         <div className="max-w-screen-xl mx-auto px-4 text-center">
             <h2 className="text-center text-primary dark:text-white my-2 text-3xl font-semibold mb-10">Deine Vorteile</h2>

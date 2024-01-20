@@ -4,13 +4,10 @@ import { useState } from 'react'
 export default function NavBar() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const handleClick = () => {
-        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-    };
 
     return (
 
-        <div className="bg-cool-grey-900 sticky top-0 z-50">
+        <div className="bg-cool-grey-900 z-50 sticky top-0">
             <div className="px-4 py-5 mx-auto container lg:px-6">
                 <div className="relative flex items-center justify-between">
                     <div className='flex items-center'>
@@ -29,11 +26,11 @@ export default function NavBar() {
                     <ul className="flex items-center hidden space-x-8 lg:flex">
                         <li>
                             <a
-                                onClick={handleClick}
+                                href="/#contact"
                                 className="inline-flex cursor-pointer items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-primary rounded  hover:bg-transparent border-primary border hover:text-primary focus:outline-none"
 
-                                aria-label="Sign up"
-                                title="Sign up"
+                                aria-label="contact"
+                                title="Contact"
                             >
                                 Kontakt aufnehmen
                             </a>
@@ -85,10 +82,11 @@ export default function NavBar() {
                                         <ul className="space-y-4">
                                             <li>
                                                 <a
-                                                    onClick={handleClick}
+                                                    href="/#contact"
                                                     className="inline-flex items-center cursor-pointer justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 bg-primary rounded  hover:bg-transparent border-primary border hover:text-primary focus:outline-none"
-                                                    aria-label="Sign up"
-                                                    title="Sign up"
+                                                    aria-label="contact"
+                                                    title="contact"
+                                                    onClick={() => setIsMenuOpen(false)}
                                                 >
                                                     Kontakt aufnehmen
                                                 </a>

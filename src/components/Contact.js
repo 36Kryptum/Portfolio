@@ -34,7 +34,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="max-w-screen-xl mb-8 mx-auto p-4 md:px-8" id={"contact"}>
+    <div className="max-w-screen-xl mb-8 mx-auto p-4 md:px-8 scroll-mt-20" id={"contact"}>
     <div className="max-w-md mx-auto space-y-3 sm:text-center">
       <h3 className="text-primary font-semibold">
         Kontakt
