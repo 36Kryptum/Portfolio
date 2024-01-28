@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <div className="p-4 pt-16 mx-auto max-w-md lg:max-w-screen-lg">
+        <div className="p-4 pt-16 mx-auto max-w-md lg:max-w-screen-lg ">
             <div className=" gird-cols-1 grid gap-10 row-gap-6 mb-8 sm:grid-cols-2">
                 <div className="">
                     <a

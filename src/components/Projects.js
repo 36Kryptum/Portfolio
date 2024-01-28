@@ -1,9 +1,6 @@
 import Image from 'next/image';
 
 export default function Projects() {
-  const handleClick = () => {
-    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-  };
   return (
     <div className="max-w-screen-xl mx-auto px-4 text-center mb-16">
       <h2 className="text-center text-primary dark:text-white my-2 text-3xl font-semibold mb-10">Überzeuge dich selbst</h2>

@@ -1,7 +1,4 @@
 export default function Hero() {
-    const handleClick = () => {
-        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-      };
 
   return (
     <section className="dark:primary dark:text-gray-100 mb-24">
@@ -13,8 +10,8 @@ export default function Hero() {
         <p className="my-6 text-cool-grey-600 text-xl">Hebe dich von deiner Konkurrenz ab. Mit einer individuellen Website im Abomodell, ganz ohne Intitialkosten.</p>
   
         <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-          <a rel="noopener noreferrer" onClick={handleClick} className="px-8 py-3 text-lg text-white cursor-pointer font-semibold rounded bg-orange-vivid-400 dark:text-background-dark">Kontakt aufnehmen</a>
-          <a rel="noopener noreferrer" onClick={handleClick} className="px-8 py-3 text-lg font-semibold cursor-pointer border border-background-dark rounded dark:border-gray-100">mehr erfahren</a>
+          <a rel="noopener noreferrer" href="#contact" className="px-8 py-3 text-lg text-white cursor-pointer font-semibold rounded bg-orange-vivid-400 dark:text-background-dark">Kontakt aufnehmen</a>
+          <a rel="noopener noreferrer" href="#solution" className="px-8 py-3 text-lg font-semibold cursor-pointer border border-background-dark rounded dark:border-gray-100">mehr erfahren</a>
         </div>
       </div>
       <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
@@ -22,6 +19,5 @@ export default function Hero() {
       </div>
     </div>
   </section>
-
   )
 }
