@@ -54,22 +54,24 @@ export default function Contact() {
       >
         <div className="flex flex-col items-center gap-y-5 gap-x-6 [&>*]:w-full">
           <div>
-            <label className="font-medium">
+            <label htmlFor="sirname" className="font-medium">
               Vorname*
             </label>
             <input
               type="text"
+              id="sirname"
               required
               name="sirname"
               className="w-full mt-2 px-3 py-2 bg-transparent outline-none border border-zinc-400 focus:border-primary shadow-sm rounded-lg"
             />
           </div>
           <div>
-            <label className="font-medium">
+            <label htmlFor="family-name" className="font-medium">
               Nachname*
             </label>
             <input
               type="text"
+              id="family-name"
               required
               name="family_name"
               className="w-full mt-2 px-3 py-2  bg-transparent outline-none border border-zinc-400 focus:border-primary shadow-sm rounded-lg"
@@ -77,32 +79,38 @@ export default function Contact() {
           </div>
         </div>
         <div>
-          <label className="font-medium">
+          <label htmlFor="email" className="font-medium">
             Email*
           </label>
           <input
             type="email"
+            id="email"
             required
             name="mail"
             className="w-full mt-2 px-3 py-2 bg-transparent outline-none border border-zinc-400 focus:border-primary shadow-sm rounded-lg"
           />
         </div>
         <div>
-          <label className="font-medium">
+          <label htmlFor="phone" className="font-medium">
             Telefon*
           </label>
           <input
             type="number"
+            id="phone"
             required
             name="phone"
             className="w-full mt-2 px-3 py-2  bg-transparent outline-none border border-zinc-400 focus:border-primary shadow-sm rounded-lg"
           />
         </div>
         <div>
-          <label className="font-medium">
+          <label htmlFor="message" className="font-medium">
             Nachricht*
           </label>
-          <textarea required name="message" className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border border-zinc-400 focus:border-primary shadow-sm rounded-lg"></textarea>
+          <textarea
+          required
+          id="message"
+          name="message" 
+          className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border border-zinc-400 focus:border-primary shadow-sm rounded-lg"></textarea>
         </div>
         <button
           className="w-full px-4 py-2 text-white font-medium bg-primary hover:bg-transparent border border-primary hover:text-primary active:bg-transparent rounded-lg duration-150"
