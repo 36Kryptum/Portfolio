@@ -7,6 +7,18 @@ export default function Projects() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
 
       <div className="p-4 hover:scale-105 duration-300 cursor-pointer"
+          onClick={() => window.open("https://www.kaempfe-fotobox.de/ki-fotobox")}>
+          <Image
+            src="/marian3.png"
+            width={0}
+            height={0}
+            alt="KI Fotobox Seite Marian Kämpfe"
+            className='w-full h-auto'
+          />
+          <h3 className="text-center text-primary my-2 text-xl font-bold">KI Fotobox Kämpfe Events</h3>
+        </div>
+
+      <div className="p-4 hover:scale-105 duration-300 cursor-pointer"
           onClick={() => window.open("https://www.juwelier-beeskow.de")}>
           <Image
             src="/sybille.png"
