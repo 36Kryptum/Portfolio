@@ -7,63 +7,63 @@ export default function Projects() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
 
       <div className="p-4 hover:scale-105 duration-300 cursor-pointer"
+          onClick={() => window.open("https://staging-sonnenschein-ggmbh.webflow.io/")}>
+          <Image
+            src="/images/sonnenschein.jpg"
+            width={0}
+            height={0}
+            alt="Storkower Sonnenschein gGmbH"
+            className='w-full h-auto'
+          />
+          <h3 className="text-center text-primary my-4 text-xl font-bold">Storkower Sonnenschein gGmbH</h3>
+        </div>
+
+      <div className="p-4 hover:scale-105 duration-300 cursor-pointer"
           onClick={() => window.open("https://www.kaempfe-fotobox.de")}>
           <Image
-            src="/marian3.png"
+            src="/images/fotobox.jpg"
             width={0}
             height={0}
             alt="KI Fotobox Seite Marian Kämpfe"
             className='w-full h-auto'
           />
-          <h3 className="text-center text-primary my-2 text-xl font-bold">KI Fotobox Kämpfe Events</h3>
+          <h3 className="text-center text-primary my-4 text-xl font-bold">KI Fotobox Kämpfe Events</h3>
         </div>
 
       <div className="p-4 hover:scale-105 duration-300 cursor-pointer"
           onClick={() => window.open("https://www.juwelier-beeskow.de")}>
           <Image
-            src="/sybille.png"
+            src="/images/juwelier.jpg"
             width={0}
             height={0}
             alt="Picture of the author"
             className='w-full h-auto'
           />
-          <h3 className="text-center text-primary my-2 text-xl font-bold">Uhren & Schmuck Sybille Fünfhaus</h3>
+          <h3 className="text-center text-primary my-4 text-xl font-bold">Uhren & Schmuck Sybille Fünfhaus</h3>
         </div>
 
         <div className="p-4 hover:scale-105 duration-300 cursor-pointer"
-          onClick={() => window.open("https://www.kaempfe-events.de/")}>
+          onClick={() => window.open("https://www.kaempfe-events.de")}>
           <Image
-            src="/marian2.png"
+            src="/images/events.jpg"
             width={0}
             height={0}
             alt="Picture of the author"
             className='w-full h-auto'
           />
-          <h3 className="text-center text-primary my-2 text-xl font-bold">Kämpfe Events & Fotografie</h3>
+          <h3 className="text-center text-primary my-4 text-xl font-bold">Kämpfe Events & Fotografie</h3>
         </div>
 
         <div className="p-4 hover:scale-105 duration-300 cursor-pointer"
-          onClick={() => window.open("https://www.ilkasteinborn.de")}>
+          onClick={() => window.open("https://www.atelier-die-zaubernadel.de")}>
           <Image
-            src="/ilka.png"
+            src="/images/zaubernadel.jpg"
             width={0}
             height={0}
-            alt="Picture of the author"
+            alt="KI Fotobox Seite Marian Kämpfe"
             className='w-full h-auto'
           />
-          <h3 className="text-center text-primary my-2 text-xl font-bold">Kosmetik & Fußpflege Ilka Steinborn</h3>
-        </div>
-
-        <div className="p-4 hover:scale-105 duration-300 cursor-pointer"
-          onClick={() => window.open("https://www.abschlussball-fotograf.de/")}>
-          <Image
-            src="/marian1.png"
-            width={0}
-            height={0}
-            alt="Picture of the author"
-            className='w-full h-auto'
-          />
-          <h3 className="text-center text-primary my-2 text-xl font-bold">Abschlussball Fotograf kostenlos</h3>
+          <h3 className="text-center text-primary my-4 text-xl font-bold">Atelier die Zaubernadel</h3>
         </div>
       </div>
     </div>
