@@ -27,7 +27,7 @@ export default function Projects() {
             alt="KI Fotobox Seite Marian Kämpfe"
             className='w-full h-auto'
           />
-          <h3 className="text-center text-primary my-4 text-xl font-bold">KI Fotobox Kämpfe Events</h3>
+          <h3 className="text-center text-primary my-4 text-xl font-bold">KI-Fotobox Kämpfe Events</h3>
         </div>
 
       <div className="p-4 hover:scale-105 duration-300 cursor-pointer"
