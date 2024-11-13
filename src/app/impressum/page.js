@@ -6,8 +6,8 @@ export default function Test() {
                     <h1 className="text-5xl font-bold leading-none text-cool-grey-800 dark:text-white sm:text-6xl mt=xl mb-16">Impressum</h1>
                     <h2 className="text-3xl font-semibold mb-4">Angaben gemäß § 5 TMG:</h2>
                     <p >Marvin Steinborn</p>
-                    <p>Buchenweg 9 </p>
-                    <p className="mb-6">15374 Müncheberg</p>
+                    <p>Nienstedtener Marktplatz 34 </p>
+                    <p className="mb-6">22609 Hamburg</p>
                     <h2 className="text-3xl font-semibold mb-4">Kontakt</h2>
                     <div className="flex">
                         <p className="mr-1 ">Telefon:</p>

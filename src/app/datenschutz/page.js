@@ -39,8 +39,8 @@ export default function Test() {
                     <h3 className="text-xl font-semibold mb-2">Hinweis zur verantwortlichen Stelle</h3>
                     <p className="mb-6">Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
                     <p>Marvin Steinborn</p>
-                    <p>Buchenweg 9</p>
-                    <p>15374 Müncheberg</p>
+                    <p>Nienstedtener Martplatz 34</p>
+                    <p>22609 Hamburg</p>
                     <div className="flex">
                         <p className="mr-1 ">Telefon:</p>
                         <a
