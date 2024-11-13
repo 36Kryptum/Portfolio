@@ -93,7 +93,7 @@ export default function Service() {
                 </div>
                 <div className="text-gray-700 grid grid-cols-5">
                 <div> <BiCheck size={26} className='fill-primary' /></div>
-                <div className='col-span-4'>3h Wartung mtl.</div>
+                <div className='col-span-4'>2h Wartung mtl.</div>
                 </div>
             </div>
             </div>
@@ -128,11 +128,11 @@ export default function Service() {
                 </div>
                 <div className="text-gray-700 grid grid-cols-5">
                 <div> <BiCheck size={26} className='fill-primary'/></div>
-                <div className='col-span-4'>5h Wartung mtl.</div>
+                <div className='col-span-4'>3h Wartung mtl.</div>
                 </div>
                 <div className="text-gray-700 grid grid-cols-5">
                 <div> <BiCheck size={26} className='fill-primary'/></div>
-                <div className='col-span-4'>professionelle Fotos</div>
+                <div className='col-span-4'>Search Engine Optimisation (SEO)</div>
                 </div>
             </div>
           <div>

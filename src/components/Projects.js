@@ -7,7 +7,7 @@ export default function Projects() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
 
       <div className="p-4 hover:scale-105 duration-300 cursor-pointer"
-          onClick={() => window.open("https://staging-sonnenschein-ggmbh.webflow.io/")}>
+          onClick={() => window.open("https://www.storkower-sonnenschein.de/")}>
           <Image
             src="/images/sonnenschein.jpg"
             width={0}

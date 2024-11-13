@@ -15,10 +15,10 @@ export default function Footer() {
                     </a>
                     <div className="mt-2 lg:max-w-sm">
                         <p className="text-sm ">
-                           Buchenweg 9
+                           Nienstedtener Martkplatz 34
                         </p>
                         <p className="mt-2 text-sm ">
-                           15374 Müncheberg
+                           22609 Hamburg
                         </p>
                     </div>
                 </div>
